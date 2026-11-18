@@ -166,7 +166,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.tangotz.com/2026/11/10/%E5%A4%9C%E8%89%B2%E8%BE%B9%E7%BC%98%EF%BC%88JP-version%EF%BC%89/" data-id="cuidWlKaV0K8wyFeDisBxMEyo" data-title="夜色边缘（JP-version）" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://blog.tangotz.com/2026/11/10/%E5%A4%9C%E8%89%B2%E8%BE%B9%E7%BC%98%EF%BC%88JP-version%EF%BC%89/" data-id="cuidf24rK08XTuGfmwqwWWGhm" data-title="夜色边缘（JP-version）" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -199,6 +199,11 @@
 </article>
 
 
+
+
+  <section id="comments" class="twikoo-comment">
+    <div id="tcomment"></div>
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -313,6 +318,28 @@
 
 
 
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/twikoo@2.0.17/dist/twikoo.all.min.js"></script>
+
+<script>
+  (function () {
+    if (!window.twikoo || !document.getElementById('tcomment')) return;
+    var meta = 'nick,mail'.split(',').map(function (item) {
+      return item.trim();
+    }).filter(Boolean);
+    twikoo.init({
+      envId: 'https://twikoo-teal.vercel.app',
+      el: '#tcomment',
+      lang: 'zh-CN',
+      pageSize: parseInt('10', 10),
+      meta: meta,
+      placeholder: '不用注册，填个昵称就能留言',
+    });
+  })();
+</script>
 
   </div>
 </body>

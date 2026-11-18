@@ -114,7 +114,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://blog.tangotz.com/2026/11/09/%E9%9A%94%E7%9D%80%E4%B8%80%E5%A0%B5%E5%A2%99/" data-id="cuid1CGNmAsCOYIGcPjhD5rIo" data-title="隔着一堵墙" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://blog.tangotz.com/2026/11/09/%E9%9A%94%E7%9D%80%E4%B8%80%E5%A0%B5%E5%A2%99/" data-id="cuid0dP5cJbu43NwEc2O8xOAj" data-title="隔着一堵墙" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -145,6 +145,11 @@
 </article>
 
 
+
+
+  <section id="comments" class="twikoo-comment">
+    <div id="tcomment"></div>
+  </section>
 </section>
         
           <aside id="sidebar">
@@ -259,6 +264,28 @@
 
 
 
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/twikoo@2.0.17/dist/twikoo.all.min.js"></script>
+
+<script>
+  (function () {
+    if (!window.twikoo || !document.getElementById('tcomment')) return;
+    var meta = 'nick,mail'.split(',').map(function (item) {
+      return item.trim();
+    }).filter(Boolean);
+    twikoo.init({
+      envId: 'https://twikoo-teal.vercel.app',
+      el: '#tcomment',
+      lang: 'zh-CN',
+      pageSize: parseInt('10', 10),
+      meta: meta,
+      placeholder: '不用注册，填个昵称就能留言',
+    });
+  })();
+</script>
 
   </div>
 </body>
